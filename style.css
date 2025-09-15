@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 * {
@@ -257,4 +259,48 @@ scale: 1.2;
 }
 @media screen  and (max-width: 500px){
   
+}
+
+
+.section {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 25vh;        /* Half screen height */
+  text-align: center;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: clamp(1.8rem, 5vw, 3.5rem); /* Responsive font size */
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 50px;
+font-family: "Bebas Neue", "Montserrat";
+
+}
+
+/* Optional underline effect */
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: #ff4d4d; /* Theme color */
+  margin: 0px auto 0;
+  border-radius: 2px;
+}
+@media screen  and (max-width: 375px){
+  .section{
+height: 20vh;
+  }
+ .section-heading{
+  font-size: 40px;
+ }
+ .section-heading::after{
+    margin: 0px auto 0;
+ }
 }
