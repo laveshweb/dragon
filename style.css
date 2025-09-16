@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
 * {
@@ -352,9 +353,10 @@ height: 20vh;
 
 .food-title {
   margin-top: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #c62828; /* red theme */
+    font-family: "Oswald", sans-serif;
 }
 
 /* Large screen: grid layout with 4 items */
@@ -372,4 +374,71 @@ height: 20vh;
     opacity: 1;
     transition: none;
   }
+}
+/* <!-- ----------------------OR CODE----------------------------- --> */
+.menu-section {
+  text-align: center;
+  padding: 0px 0px;
+
+}
+
+.menu-section h2 {
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+    color: #d1321a;
+}
+
+.qr-box img {
+  width: 85%;        /* expand full width of parent */
+  max-width: 600px;   /* but not bigger than 300px */
+  height: auto;       /* keep aspect ratio */
+  margin-bottom: 10px;
+  border: 5px solid #d1321a; /* optional border for style */
+  border-radius: 10px;       /* rounded edges */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.qr-box p {
+  font-size: 1.2rem;
+  color: #d1321a;
+  margin-bottom: 15px;
+
+}
+
+.qr-box .btn {
+  display: inline-block;
+  background: #d1321a;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.qr-box .btn:hover {
+  background: #6b4f4f;
+}
+@media (max-width: 450px){
+   .qr-box img {
+     width: 85%;
+ 
+  } 
+ 
+.qr-box img{
+    border: 3px solid #d1321a;
+}
+.qr-box .btn {
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+}
+@media (max-width: 550px){
+  .menu-section h2{
+  font-size: 2rem;
+}
 }
