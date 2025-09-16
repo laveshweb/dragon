@@ -177,6 +177,7 @@ margin-bottom: 20px;
   height: 100vh;         /* Full screen height */
   text-align: center;
 background: #ef3c18e0;
+  overflow: hidden;
 
 }
 
