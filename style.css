@@ -305,3 +305,71 @@ height: 20vh;
     margin: 0px auto 0;
  }
 }
+
+
+.special-foods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 0rem;
+  overflow: hidden;
+}
+
+.food-container {
+  position: relative;
+  max-width: 600px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.food-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+    background: transparent; /* 🔥 add this */
+  box-shadow: none;        /* 🔥 just to be sure */
+  border: none;
+
+}
+
+.food-item.active {
+  opacity: 1;
+  position: relative;
+}
+
+.food-image {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.food-title {
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c62828; /* red theme */
+}
+
+/* Large screen: grid layout with 4 items */
+@media (min-width: 600px) {
+  .food-container {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+  }
+
+  .food-item {
+    position: static;
+    opacity: 1;
+    transition: none;
+  }
+}
